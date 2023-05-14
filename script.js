@@ -7,22 +7,19 @@ function getWeather(city) {
     .then(data => {
       const {
         main: { temp },
-        weather: [weather],
-        main: { name }
+        weather: [weather]
       } = data;
-      console.log(url)
       const icon = `https://openweathermap.org/img/wn/${weather.icon}.png`;
       const weatherText = weather.description;
-      const temp1 = parseInt(temp - 273.123);
-      console.log(temp1);
+      const temperature  = parseInt(temp - 273.123);
       console.log(temp);
-      const temperature = `${temp1}°C`;
-      const namec =  `${name}`;
+      const CityName = (
+          (city[0]).toUpperCase()+(city.slice(1)).toLowerCase()
+        );
+      console.log(CityName);
       document.getElementById("weather").innerHTML = `
         <img src="${icon}" alt="Weather icon">
-        <h2>${city}</h2>
-        <h3>${weatherText}</h3>
-        <p>${temperature}</p>
+        <p>In <b>${CityName}</b> there is a <b>${weatherText}</b> and tempreture is <b>${temperature}°C</b>.</p>
       `;
     });
 }
