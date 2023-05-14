@@ -18,8 +18,10 @@ function getWeather(city) {
         );
       console.log(CityName);
       document.getElementById("weather").innerHTML = `
-        <img src="${icon}" alt="Weather icon">
+        
+      <img src="${icon}" alt="Weather icon">
         <p>In <b>${CityName}</b> there is a <b>${weatherText}</b> and tempreture is <b>${temperature}°C</b>.</p>
+        
       `;
     });
 }
