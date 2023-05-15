@@ -28,11 +28,17 @@ function getWeather(city) {
       `;
     });
 }
+
 function wa(){
+  if(CityName == undefined){
+    alert("Enter Valid City")
+  }
+  else{
   let phno = prompt("Enter Phone no");
   let msg = "In *"+ CityName+ "* there is a *" + weatherText +"* and temprature is *"+ temperature +"*°C";
   console.log(msg);
   document.getElementById("an").href =`https://wa.me/91${phno}?text=${msg}`
+  }
 }
 
 document.querySelector("form").addEventListener("submit", (e) => {
