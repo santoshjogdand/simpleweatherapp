@@ -42,7 +42,7 @@ body {
     transition: width .35s ease-in-out;
   }
   input[type="text"]:focus {
-    width: 200px;
+    width: 250px;
     outline: 0;
     
   }
@@ -70,8 +70,8 @@ body {
     align-items: center;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
-    
-    animation: fadeIn 10s;
+    font-size: larger;
+    animation: fadeIn 4s;
   }
   #insta{
     display: flex;
