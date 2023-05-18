@@ -21,9 +21,8 @@ function getWeather(city) {
         
           
       document.getElementById("weather").innerHTML = `
-        
-      <img src="${icon}" alt="Weather icon">
-        <p>In <b>${CityName}</b> there is a <b>${weatherText}</b> and temprature is <b>${temperature}°C</b>.</p>
+      <img src="${icon}" id="png" alt="Weather icon"> <br>
+        <p id="wprg">In <b>${CityName}</b> there is a <b>${weatherText}</b> and temprature is <b>${temperature}°C</b>.</p>
         
       `;
     });
