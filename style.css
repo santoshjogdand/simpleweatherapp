@@ -6,14 +6,11 @@ body {
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
     background-color: #ffffff;
-    background: #D3CCE3;  /* fallback for old browsers */
-
-background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    margin: 0;
   }
   
   #main {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
   }
   
@@ -21,9 +18,12 @@ background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, F
     text-align: center;
     font-family: 'Righteous', cursive;
     font-weight: 400;
+    margin: 10px 0px;
+    width: 100%;
   }
   form{
     /* margin-left: 35%; */
+    margin-top: 15px;
     display: flex;
   justify-content: center;
   max-width: 100%;
@@ -83,6 +83,7 @@ background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, F
   input{
     max-width: 100%;
     min-width: 200px;
+    position: sticky;
   }
   
   @keyframes fadeIn {
@@ -98,7 +99,8 @@ background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, F
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     font-size: larger;
-    animation: fadeIn 4s;
+    text-align: center;
+    justify-items: center ;
   }
   #insta{
     display: flex;
@@ -147,4 +149,19 @@ background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, F
 .frame:hover{
   width: 140px;
   transition: width .35s ease-in-out;
+}
+#head{
+  padding: .5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* background-color: #ffffff; */
+  background: linear-gradient(to right, rgb(87, 221, 255), rgb(233, 161, 255));
+}
+
+#png{
+  margin-right: 0;
+}
+#wprg{
+  margin-left: 0;
 }
